@@ -1,5 +1,12 @@
-# Do-you-know-me-Quiz-mark1
-A CLI Application to know how much you know about me :) 
+# Do you know me? [Mark 1]
+A quiz to know if you know me better.
 
 
-[Link to Live Program](https://replit.com/@genx/Do-you-know-me-or-Quiz-or-mark1?embed=1&output=1)
+## Tech Used
+ - Basic Javascript
+ - readline-sync   
+
+
+## Live Showcase
+[Link to Live showcase on Repl](https://replit.com/@genx/Do-you-know-me-or-Quiz-or-mark1?embed=1&output=1)
+
