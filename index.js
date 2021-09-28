@@ -12,6 +12,18 @@ quest3 = {
   question: "What is my favourite superhero? Hint: DC Hero ",
   answer: "Flash",
 }
+quest4 = {
+  question: "What is my favourite color?",
+  answer: "Purple",
+}
+quest5 = {
+  question:"What is my favourite number?",
+  answer:"7",
+}
+quest6 = {
+  question:"Am I left handed?",
+  answer:"yes",
+}
 
 let score = 0;
 
@@ -44,12 +56,53 @@ function thirdQues(){
   }
 }
 
+function fourQues(){
+  questionVar = quest4.question;
+  var askQuestion = readlineSync.question(questionVar);
+  if(askQuestion===quest4.answer){
+    console.log("Correct Answer! ");
+    score +=1;
+    console.log("You got one point.");
+  }else {
+    console.log("Wrong Answer.");
+  }
+}
+
+function fiveQues(){
+  questionVar = quest5.question;
+  var askQuestion = readlineSync.question(questionVar);
+  if(askQuestion===quest5.answer){
+    console.log("Correct Answer! ");
+    score +=1;
+    console.log("You got one point.");
+  }else {
+    console.log("Wrong Answer.");
+  }
+}
+
+function sixQues(){
+  questionVar = quest6.question;
+  var askQuestion = readlineSync.question(questionVar);
+  if(askQuestion===quest6.answer){
+    console.log("Correct Answer! ");
+    score +=1;
+    console.log("You got one point.");
+  }else {
+    console.log("Wrong Answer.");
+  }
+}
 
 
-var highScore = [2];
+
+
+
+var highScore = [5];
 var quiz1 = firstQues();
 var quiz2 = secondQues();
 var quiz3 = thirdQues();
+var quiz4 = fourQues();
+var quiz5 = fiveQues();
+var quiz6 = sixQues();
 
 if(score ===highScore){
   console.log("You have reached highest score.");
@@ -62,4 +115,4 @@ if(score > highScore){
 }
 
 console.log("\nTotal: "+score+ " points");
-console.log("Highest Score is "+highScore);
+console.log("Highest Score on leaderboard is "+highScore);
